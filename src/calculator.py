@@ -1,14 +1,13 @@
 class Calculator:
 
-    def calc(self, n1, o, n2):
-        n1 = int(n1)
-        n2 = int(n2)
-        if o == "+":
-            return n1+n2
-        if o == "-":
-            return n1-n2
-        if o == "*":
-            return n1*n2
-        if o == "/":
-            return n1/n2
-
+    def calc(self, n_1, oper, n_2):
+        n_1 = int(n_1)
+        n_2 = int(n_2)
+        if oper == "+":
+            return n_1+n_2
+        if oper == "-":
+            return n_1-n_2
+        if oper == "*":
+            return n_1*n_2
+        if oper == "/":
+            return n_1/n_2
