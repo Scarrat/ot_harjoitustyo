@@ -3,12 +3,12 @@
 Sovelluksen aiheena on perustyylinen laskin.
 
 ## Perustoiminnallisuudet
-* Plus-, miinus-, kerto- ja jakolaskut.
-* Laskuhistoria
-* Potenssit
+* Plus-, miinus-, kerto- ja jakolaskut. TEHTY
+* Laskuhistoria.
+* Potenssit.
 
 ## Käyttöliittymä
-Tekstikäyttöliittymä alkuun. Graafiseen siirtyminen myöhemmin.
+Graafinen käyttöliittymä. TEHTY
 
 ## Mahdollises toiminnallisuudet
 * Tietokannan käyttö jotenkin?

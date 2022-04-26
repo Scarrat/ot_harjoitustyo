@@ -7,3 +7,7 @@
 ## Viikko4
 
 - Lisätty toiminnallisuus laskemisen jatkamiseen edellisestä vastauksesta.
+
+## Viikko5
+
+- Muutettu sovellus graafiseen käyttöliittymään.

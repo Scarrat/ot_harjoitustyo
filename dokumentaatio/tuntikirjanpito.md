@@ -6,3 +6,7 @@
 | 5.4 | 3    | sain calculator-luokan kuntoon ja säädin taskeja |
 | 11.4 | 3    | lisäsin ans-toiminnallisuuden ja suunnittelin jatkoa |
 | 12.4 | 1    | tein tarvittavat muutokset viikkopalautukseen |
+| 24.4 | 3    | opettelin tkinteriä/aloittelin käyttöliittymää |
+| 25.4 | 2    | muodostin sovellukselle graafisen käyttöliittymän |
+| 26.4 | 2    | tein tarvittavat muutokset viikkopalautukseen ja parantelin koodia |
+| Yht | 17   | 

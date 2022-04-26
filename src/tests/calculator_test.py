@@ -6,13 +6,13 @@ class TestCalculator(unittest.TestCase):
         self.calculator=Calculator()
 
     def test_plussa_toimii(self):
-        self.assertEqual(self.calculator.calc(5,"+",5),10)
+        self.assertEqual(self.calculator.calc("5+5"),10)
 
     def test_miinus_toimii(self):
-        self.assertEqual(self.calculator.calc(5,"-",5),0)
+        self.assertEqual(self.calculator.calc("5-5"),0)
 
     def test_kerto_toimii(self):
-        self.assertEqual(self.calculator.calc(5,"*",5),25)
+        self.assertEqual(self.calculator.calc("5*5"),25)
     
     def test_jako_toimii(self):
-        self.assertEqual(self.calculator.calc(5,"/",5),1)
+        self.assertEqual(self.calculator.calc("5/5"),1)
