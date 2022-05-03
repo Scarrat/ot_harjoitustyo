@@ -26,7 +26,7 @@ def click(item):
 
 def equals():
     global expression
-    result = str(calculator.calc(expression))
+    result = str(calculator.calc_basic(expression))
     input.set(result)
     expression = result
 
