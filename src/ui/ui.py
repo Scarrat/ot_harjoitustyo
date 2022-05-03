@@ -4,11 +4,17 @@ from calculator import Calculator
 
 calculator = Calculator()
 class UI:
+    """Class that manages the UI of the program.   
+    """
     def __init__(self, root):
+        """Creates new calculator UI.
+        """
         self._root = root
         self.input = None
 
     def start(self):
+        """Starts the calculator UI window.
+        """
         self.input = StringVar()
         self._label_var.set("0")
 
@@ -20,17 +26,26 @@ expression = ""
 input = StringVar()
 
 def click(item):
+    """Manages what happens after clicking a number or a symbol.
+
+    Args:
+        item: The button pressed     
+    """
     global expression
     expression = expression + str(item)
     input.set(expression)
 
 def equals():
+    """Manages what happens after clicking the equals button.    
+    """
     global expression
     result = str(calculator.calc_basic(expression))
     input.set(result)
     expression = result
 
 def clear_field():
+    """Manages what happens after clicking clear button   
+    """
     global expression
     expression = ""
     input.set("")

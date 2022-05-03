@@ -1,7 +1,17 @@
 import re
 class Calculator:
+    """The class that manages the logic part of calculator.
+    """
 
     def calc_basic(self,expression):
+        """Calculates the answer of the expression written on the calculator screen.
+
+        Args:
+            expression: the string given by calculator.
+
+        Returns:
+            An integer with the answer to the calculation.
+        """
         result = 0
         split = re.split('(\d+)', expression)
         del split[0]
@@ -39,7 +49,7 @@ class Calculator:
 
     def subtraction(self,num1,num2):
         return int(num1)-int(num2)
-    
+
     def multiplication(self, num1,num2):
         return int(num1)*int(num2)
 
@@ -47,5 +57,3 @@ class Calculator:
         if int(num2) == 0:
             return 0
         return int(int(num1)/int(num2))
-
-
