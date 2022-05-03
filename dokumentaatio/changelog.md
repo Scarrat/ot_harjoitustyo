@@ -11,3 +11,7 @@
 ## Viikko5
 
 - Muutettu sovellus graafiseen käyttöliittymään.
+
+## Viikko6
+
+- Korvattu eval-funktio ja muuta satunnaista korjailua. Jäljessä aikataulusta :|
