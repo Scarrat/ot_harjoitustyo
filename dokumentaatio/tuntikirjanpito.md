@@ -9,4 +9,6 @@
 | 24.4 | 3    | opettelin tkinteriä/aloittelin käyttöliittymää |
 | 25.4 | 2    | muodostin sovellukselle graafisen käyttöliittymän |
 | 26.4 | 2    | tein tarvittavat muutokset viikkopalautukseen ja parantelin koodia |
-| Yht | 17   | 
+| 30.4 | 2    | tutkiskelin vaihtoehtoja evalin korvaukselle. |
+| 3.5 | 4    | korvasin evalin omalla laskufunktiolla |
+| Yht | 23   | 
