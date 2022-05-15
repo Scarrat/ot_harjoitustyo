@@ -1,4 +1,3 @@
-from note import Note
 from repositories.history_repo import history_repository as DefaultRepo
 
 class HistoryService:

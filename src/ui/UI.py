@@ -1,8 +1,8 @@
 from tkinter import scrolledtext, ttk, StringVar, constants
 from tkinter import *
-from calculator import Calculator
+from entities.calculator import Calculator
 from services.history_service import history_service
-from note import Note
+from entities.note import Note
 from datetime import datetime
 
 
@@ -69,7 +69,7 @@ class UI:
         if not self.operand or not self.num1 or not self.num2:
             self.input.set("Please use correct form for expressions")
         else:   
-            result = str(calculator.calc_test(self.num1, self.operand,self.num2))
+            result = str(calculator.calc(self.num1, self.operand,self.num2))
             self.last_exp = self.expression + "=" + str(result)
             self.input.set(result)
             self.expression = result

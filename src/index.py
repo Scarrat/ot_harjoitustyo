@@ -1,11 +1,12 @@
+from tkinter import Tk
 from ui.UI import UI
-from tkinter import Tk, ttk
+
 
 def main():
     window = Tk()
     window.title("Calculator")
-    ui = UI(window)
-    ui.start()
+    interface = UI(window)
+    interface.start()
 
     window.mainloop()
 

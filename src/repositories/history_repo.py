@@ -1,13 +1,12 @@
-from pathlib import Path
 from database_connection import get_database_connection
-from note import Note
+from entities.note import Note
 
 class HistoryRepository:
     """Class that deals with the database connections."""
     def __init__(self, connection):
         """Constructor.
-        
-            Args: 
+
+            Args:
                 connection: the database connection
         """
         self._connection = connection
