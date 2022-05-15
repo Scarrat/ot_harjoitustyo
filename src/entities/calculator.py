@@ -2,20 +2,6 @@ import re
 class Calculator:
     """The class that manages the logic part of calculator.
     """
-    def addition(self,num1,num2):
-        return int(num1)+int(num2)
-
-    def subtraction(self,num1,num2):
-        return int(num1)-int(num2)
-
-    def multiplication(self, num1,num2):
-        return int(num1)*int(num2)
-
-    def division(self, num1,num2):
-        if int(num2) == 0:
-            return 0
-        return int(int(num1)/int(num2))
-
     def calc(self, num1, oper, num2):
         """Calculates the answer of the expression written on the calculator screen.
 
@@ -38,7 +24,7 @@ class Calculator:
                 return round(float(num1)*float(num2),2)
             if oper == "/":
                 if float(num2) == 0:
-                    return 0
+                    return "Please don't divide by zero"
                 return round(float(float(num1)/float(num2)),2)
         if oper == "+":
             return int(num1)+int(num2)
@@ -49,5 +35,5 @@ class Calculator:
         if oper == "/":
             if float(num2) == 0:
                 return "Please don't divide by zero"
-        return round(float(int(num1)/int(num2)),2)
+            return round(float(int(num1)/int(num2)),2)
     

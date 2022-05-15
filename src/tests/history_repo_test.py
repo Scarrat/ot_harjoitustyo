@@ -4,7 +4,7 @@ from repositories.history_repo import history_repository
 from initialize_database import initialize_database
 from entities.note import Note
 
-class TestUserRepository(unittest.TestCase):
+class TestHistoryRepository(unittest.TestCase):
     def setUp(self):
         initialize_database()
         self.note_ten = Note("5+5=10",datetime.now().strftime("%d/%m %H:%M"))
@@ -21,5 +21,14 @@ class TestUserRepository(unittest.TestCase):
         history_repository.insert(self.note_hundred)
         notes = history_repository.find_all()
         self.assertEqual(len(notes), 3)
+
+    def test_delete_all(self):
+        history_repository.insert(self.note_ten)
+        history_repository.insert(self.note_twenty)
+        history_repository.insert(self.note_hundred)
+        history_repository.delete_all()
+        notes = history_repository.find_all()
+        self.assertEqual(len(notes),0)
+        
 
     

@@ -40,22 +40,15 @@ class TestCalculator(unittest.TestCase):
 
     def test_division(self):
         self.assertEqual(self.calculator.calc("10","/","-5"),-2)
-
-    def test_addition_base(self):
-        self.assertEqual(self.calculator.addition(5,5),10)
-
-    def test_subtraction_base(self):
-        self.assertEqual(self.calculator.subtraction(5,5),0)
-
-    def test_multiplication_base(self):
-        self.assertEqual(self.calculator.multiplication(5,5),25)
-    
-    def test_division_base(self):
-        self.assertEqual(self.calculator.division(5,5),1)
-        
+       
     def test_division_zero(self):
         self.assertEqual(self.calculator.calc("5","/","0"),"Please don't divide by zero")
 
     def test_incorrect_input(self):
         self.assertEqual(self.calculator.calc("5","/","/0"),"Please use correct expression format")
 
+    def test_incorrect_input(self):
+        self.assertEqual(self.calculator.calc("5.5","/","0"),"Please don't divide by zero")
+
+    def test_incorrect_input(self):
+        self.assertEqual(self.calculator.calc("5.5","/","0"),"Please don't divide by zero")
