@@ -15,3 +15,6 @@
 ## Viikko6
 
 - Korvattu eval-funktio ja muuta satunnaista korjailua. Jäljessä aikataulusta :|
+
+## Viikko7
+- Historia tehty, tietokanta lisätty, sovellus valmis.

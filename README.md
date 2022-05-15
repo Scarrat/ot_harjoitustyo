@@ -20,6 +20,11 @@ Perustoiminnallinen laskin
 ```bash
 poetry install
 ```
+
+### Alkutoimet
+```bash
+poetry run invoke build
+```
 ### Käynnistäminen
 ```bash
 poetry run invoke start

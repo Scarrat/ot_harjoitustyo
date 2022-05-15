@@ -11,4 +11,8 @@
 | 26.4 | 2    | tein tarvittavat muutokset viikkopalautukseen ja parantelin koodia |
 | 30.4 | 2    | tutkiskelin vaihtoehtoja evalin korvaukselle. |
 | 3.5 | 4    | korvasin evalin omalla laskufunktiolla |
-| Yht | 23   | 
+| 8.5 | 2   | liitin sovellukseen tietokannan |
+| 11.5 | 4   | muokkasin rakennetta ja kokeilin uusia toimintoja |
+| 13.5 | 4   | sain historian valmiiksi |
+| 15.5 | 6   | sovelluslogiikan päivitystä, viimeistelyä |
+| Yht | 38   | 

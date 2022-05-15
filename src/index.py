@@ -1,7 +1,13 @@
+from ui.UI import UI
+from tkinter import Tk, ttk
 
-from ui.ui import UI
+def main():
+    window = Tk()
+    window.title("Calculator")
+    ui = UI(window)
+    ui.start()
 
-ui = UI()
+    window.mainloop()
 
 if __name__ =='__main__':
-    ui.start()
+    main()

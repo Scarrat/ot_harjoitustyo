@@ -14,8 +14,11 @@ class Calculator:
         """
         result = 0
         split = re.split('(\d+)', expression)
-        del split[0]
+        if split[0] != "+" or split[0] != "-" or split[0] != "*" or split[0] != "/":
+            del split[0]
         del split[len(split)-1]
+        if len(split) < 3:
+            return 0
         while split:
             if split[0] == "+" or split[0] == "-" or split[0] == "*" or split[0] == "/":
                 sym = split[0]
@@ -57,3 +60,28 @@ class Calculator:
         if int(num2) == 0:
             return 0
         return int(int(num1)/int(num2))
+
+    def calc_test(self, num1, oper, num2):
+        """Calculates the answer of the expression written on the calculator screen.
+
+        Args:
+            num1: first number of the expression.
+            oper: operand of the expression.
+            num2 : second number of the expression
+
+        Returns:
+            An integer with the answer to the calculation.
+        """
+        if "*" in str(num1+num2) or "/" in str(num1+num2):
+            return "Please use correct expression format"   
+        if oper == "+":
+            return int(num1)+int(num2)
+        if oper == "-":
+            return int(num1)-int(num2)
+        if oper == "*":
+            return int(num1)*int(num2)
+        if oper == "/":
+            if int(num2) == 0:
+                return 0
+        return int(int(num1)/int(num2))
+    
