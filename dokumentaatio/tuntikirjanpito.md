@@ -14,5 +14,5 @@
 | 8.5 | 2   | liitin sovellukseen tietokannan |
 | 11.5 | 4   | muokkasin rakennetta ja kokeilin uusia toimintoja |
 | 13.5 | 4   | sain historian valmiiksi |
-| 15.5 | 6   | sovelluslogiikan päivitystä, viimeistelyä |
-| Yht | 38   | 
+| 15.5 | 8   | sovelluslogiikan päivitystä, viimeistelyä |
+| Yht | 40   | 
