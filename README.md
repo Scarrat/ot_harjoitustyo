@@ -16,7 +16,7 @@ Perustoiminnallinen laskin
 ## Release
 - [Loppupalautus](https://github.com/Scarrat/ot_harjoitustyo/releases/tag/loppupalautus)
 
-## Käyttöohjeet:
+## Asennus ja komentorivikomennot:
 ### Asennus
 ```bash
 poetry install
