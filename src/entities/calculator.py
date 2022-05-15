@@ -1,4 +1,3 @@
-import re
 class Calculator:
     """The class that manages the logic part of calculator.
     """
