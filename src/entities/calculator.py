@@ -31,15 +31,15 @@ class Calculator:
             return "Please use correct expression format"
         if "." in num1 or "." in num2:
             if oper == "+":
-                return float(num1)+float(num2)
+                return round(float(num1)+float(num2),2)
             if oper == "-":
-                return float(num1)-float(num2)
+                return round(float(num1)-float(num2),2)
             if oper == "*":
-                return float(num1)*float(num2)
+                return round(float(num1)*float(num2),2)
             if oper == "/":
                 if float(num2) == 0:
                     return 0
-                return float(float(num1)/float(num2))
+                return round(float(float(num1)/float(num2)),2)
         if oper == "+":
             return int(num1)+int(num2)
         if oper == "-":
@@ -49,5 +49,5 @@ class Calculator:
         if oper == "/":
             if float(num2) == 0:
                 return "Please don't divide by zero"
-        return float(int(num1)/int(num2))
+        return round(float(int(num1)/int(num2)),2)
     
