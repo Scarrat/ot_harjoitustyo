@@ -25,5 +25,5 @@ Luokka history_repo vastaa laskuhistorian tallentamisesta tietokantaan. Tietokan
 Jos sovellukseen näppäillään laskutoimitus, painetaan yhtäkuin näppäintä ja tämän jälkeen tallennusnäppäintä, kontrolli etenee seuraavanlaisesti:
 Sekvenssikaavio:
 
-![Sekvenssikaavio](https://github.com/Scarrat/ot_harjoitustyo/blob/master/dokumentaatio/kuvat/Selection_168.png)
+![Sekvenssikaavio](https://github.com/Scarrat/ot_harjoitustyo/blob/master/dokumentaatio/kuvat/Selection_172.png)
 
