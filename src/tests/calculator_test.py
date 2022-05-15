@@ -6,28 +6,40 @@ class TestCalculator(unittest.TestCase):
         self.calculator=Calculator()
 
     def test_addition(self):
-        self.assertEqual(self.calculator.calc_test("5","+","5"),10)
+        self.assertEqual(self.calculator.calc("5","+","5"),10)
     
     def test_addition_neg(self):
-        self.assertEqual(self.calculator.calc_test("5","+","-4"),1)
+        self.assertEqual(self.calculator.calc("5","+","-4"),1)
+
+    def test_addition_dot(self):
+        self.assertEqual(self.calculator.calc("5.2","+","1.2"),6.4)
 
     def test_subtraction(self):
-        self.assertEqual(self.calculator.calc_test("5","-","5"),0)
+        self.assertEqual(self.calculator.calc("5","-","5"),0)
     
     def test_subtraction_neg(self):
-        self.assertEqual(self.calculator.calc_test("5","-","-4"),9)
+        self.assertEqual(self.calculator.calc("5","-","-4"),9)
+
+    def test_subtraction_dot(self):
+        self.assertEqual(self.calculator.calc("5.1","-","4.1"),1)
 
     def test_multiplication(self):
-        self.assertEqual(self.calculator.calc_test("5","*","5"),25)
+        self.assertEqual(self.calculator.calc("5","*","5"),25)
+
+    def test_multiplication_dot(self):
+        self.assertEqual(self.calculator.calc("5.2","*","5"),26.0)
 
     def test_multiplication(self):
-        self.assertEqual(self.calculator.calc_test("5","*","-5"),-25)
+        self.assertEqual(self.calculator.calc("5","*","-5"),-25)
     
     def test_division(self):
-        self.assertEqual(self.calculator.calc_test("5","/","5"),1)
+        self.assertEqual(self.calculator.calc("5","/","5"),1)
 
     def test_division(self):
-        self.assertEqual(self.calculator.calc_test("10","/","-5"),-2)
+        self.assertEqual(self.calculator.calc("6.4","/","2"),3.2)
+
+    def test_division(self):
+        self.assertEqual(self.calculator.calc("10","/","-5"),-2)
 
     def test_addition_base(self):
         self.assertEqual(self.calculator.addition(5,5),10)
@@ -42,8 +54,8 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(self.calculator.division(5,5),1)
         
     def test_division_zero(self):
-        self.assertEqual(self.calculator.calc_test("5","/","0"),0)
+        self.assertEqual(self.calculator.calc("5","/","0"),"Please don't divide by zero")
 
     def test_incorrect_input(self):
-        self.assertEqual(self.calculator.calc_test("5","/","/0"),"Please use correct expression format")
+        self.assertEqual(self.calculator.calc("5","/","/0"),"Please use correct expression format")
 
