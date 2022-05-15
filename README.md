@@ -14,7 +14,7 @@ Perustoiminnallinen laskin
 
 
 ## Release
-- [Viikko5](https://github.com/Scarrat/ot_harjoitustyo/releases/tag/viikko5)
+- [Loppupalautus](https://github.com/Scarrat/ot_harjoitustyo/releases/tag/loppupalautus)
 
 ## Käyttöohjeet:
 ### Asennus
