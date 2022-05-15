@@ -10,6 +10,7 @@ Perustoiminnallinen laskin
 - [Changelog](https://github.com/Scarrat/ot_harjoitustyo/blob/master/dokumentaatio/changelog.md)
 - [Arkkitehtuuri](https://github.com/Scarrat/ot_harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 - [Käyttöohje](https://github.com/Scarrat/ot_harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
+- [Testaus](https://github.com/Scarrat/ot_harjoitustyo/blob/master/dokumentaatio/testaus.md)
 
 
 ## Release
