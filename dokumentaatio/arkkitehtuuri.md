@@ -5,7 +5,7 @@
 UI sisältää käyttöliittymän, services sisältää konnektoriluokan, repositories sisältää tietokantaa hoitavan luokan ja entities sisältää laskin ja historia oliot.
 
 
-![Pakkauskaavio](https://github.com/Scarrat/ot_harjoitustyo/blob/master/dokumentaatio/kuvat/luokkakaavio.png)
+![Pakkauskaavio](https://github.com/Scarrat/ot_harjoitustyo/blob/master/dokumentaatio/kuvat/Selection_171.png)
 
 
 ## Käyttöliittymä
