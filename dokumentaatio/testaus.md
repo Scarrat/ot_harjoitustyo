@@ -16,6 +16,8 @@ HistoryRepository-luokkaa testaa history_repo_test-luokka, tietokanta tyhjennet�
 
 Testauskattavuus 82% ilman käyttöliittymää.
 
+![Testaus](https://github.com/Scarrat/ot_harjoitustyo/blob/master/dokumentaatio/kuvat/Selection_173.png)
+
 Testaamattä jäivät history_service, joka on vain yhteyskappale history_repoon, koska jostain syystä en saanut toimimaan ilman, sekä pari riviä calculator-luokasta.
 
 ## Järjestelmätestaus
