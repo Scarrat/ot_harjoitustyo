@@ -1,7 +1,5 @@
 from tkinter import scrolledtext, ttk, StringVar, constants
 from tkinter import *
-
-from numpy import empty
 from calculator import Calculator
 from services.history_service import history_service
 from note import Note
