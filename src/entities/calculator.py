@@ -36,4 +36,3 @@ class Calculator:
             if float(num2) == 0:
                 return "Please don't divide by zero"
             return round(float(int(num1)/int(num2)),2)
-    

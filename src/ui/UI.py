@@ -25,6 +25,7 @@ class UI:
         self.num1 = ""
         self.num2 = ""
         self.operand = ""
+        self.last_input = ""
 
     def start(self):
         """Starts the calculator UI window.
@@ -44,6 +45,7 @@ class UI:
             self.num2 = self.num2 + str(item)
         else:
             self.num1 = self.num1 + str(item)
+        self.last_input = "num"
 
     def click_oper(self,item):
         """Manages what happens after clicking a symbol.
@@ -51,15 +53,23 @@ class UI:
         Args:
             item: The button pressed     
         """
-        self.expression = self.expression + str(item)
-        self.input.set(self.expression)
-
-        if self.operand:
-            self.num2 = self.num2 + str(item)
-        if self.num1 == "":
-            self.num1 = self.num1 + str(item)
+        if self.last_input == "num" and self.operand: 
+            self.input.set("Please use correct expression format")
+            self.expression = ""
+            self.operand = ""
+            self.num1 = ""
+            self.num2 = ""
         else:
-            self.operand = item
+            self.expression = self.expression + str(item)
+            self.input.set(self.expression)
+
+            if self.operand:
+                self.num2 = self.num2 + str(item)
+            if self.num1 == "":
+                self.num1 = self.num1 + str(item)
+            else:
+                self.operand = item 
+            self.last_input = "oper"
 
     
 
